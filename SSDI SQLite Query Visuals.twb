@@ -1,0 +1,1624 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20232.23.0728.0952                               -->
+<workbook original-version='18.1' source-build='2023.2.0 (20232.23.0728.0952)' version='18.1' xml:base='http://localhost:9100' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location derived-from='https://vizhub/workbooks/SSDISQLiteQueryVisuals?rev=1.1' id='SSDISQLiteQueryVisuals' path='/workbooks' revision='1.2' />
+  <preferences />
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='sect01b_202308061133' inline='true' name='federated.0zdy1hb0vb7rrd129qr0u18hgkrk' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='sect01b_202308061133' name='textscan.1asly470dqrk0y1c9x6ks0zthgcu'>
+            <connection class='textscan' directory='C:/Users/Abhishek Dasgupta/Desktop/Databases/SSDI Data Single Table' filename='sect01b_202308061133.txt' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1asly470dqrk0y1c9x6ks0zthgcu' name='sect01b_202308061133.txt' table='[sect01b_202308061133#txt]' type='table'>
+          <columns character-set='UTF-8' header='no' locale='en_US' separator='|'>
+            <column datatype='string' name='F1' ordinal='0' />
+            <column datatype='date' date-parse-format='yyyy' name='F2' ordinal='1' />
+            <column datatype='real' name='F3' ordinal='2' />
+            <column datatype='real' name='F4' ordinal='3' />
+            <column datatype='real' name='F5' ordinal='4' />
+            <column datatype='string' name='F6' ordinal='5' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1asly470dqrk0y1c9x6ks0zthgcu' name='sect01b_202308061133.txt' table='[sect01b_202308061133#txt]' type='table'>
+          <columns character-set='UTF-8' header='no' locale='en_US' separator='|'>
+            <column datatype='string' name='F1' ordinal='0' />
+            <column datatype='date' date-parse-format='yyyy' name='F2' ordinal='1' />
+            <column datatype='real' name='F3' ordinal='2' />
+            <column datatype='real' name='F4' ordinal='3' />
+            <column datatype='real' name='F5' ordinal='4' />
+            <column datatype='string' name='F6' ordinal='5' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[sect01b_202308061133.txt]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;|&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;false&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[sect01b_202308061133.txt]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <auto-hidden>true</auto-hidden>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F2</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[F2]</local-name>
+            <parent-name>[sect01b_202308061133.txt]</parent-name>
+            <remote-alias>F2</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F3</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[F3]</local-name>
+            <parent-name>[sect01b_202308061133.txt]</parent-name>
+            <remote-alias>F3</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F4</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[F4]</local-name>
+            <parent-name>[sect01b_202308061133.txt]</parent-name>
+            <remote-alias>F4</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F5</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[F5]</local-name>
+            <parent-name>[sect01b_202308061133.txt]</parent-name>
+            <remote-alias>F5</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F6</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F6]</local-name>
+            <parent-name>[sect01b_202308061133.txt]</parent-name>
+            <remote-alias>F6</remote-alias>
+            <ordinal>5</ordinal>
+            <auto-hidden>true</auto-hidden>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Year' datatype='date' name='[F2]' role='dimension' type='ordinal' />
+      <column caption='Avg Mon for Workers ($)' datatype='real' name='[F3]' role='measure' type='quantitative' />
+      <column caption='Avg Mon for Widow(er)s ($)' datatype='real' name='[F4]' role='measure' type='quantitative' />
+      <column caption='Avg Mon for Adult Children ($)' datatype='real' name='[F5]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='sect01b_202308061133.txt' datatype='table' name='[__tableau_internal_object_id__].[sect01b_202308061133.txt_C1DDC7DDF4714AF7A25BA54E9FA19C2B]' role='measure' type='quantitative' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection authentication='auth-none' author-locale='en_US' class='hyper' dbname='Data/Extracts/federated_0zdy1hb0vb7rrd129qr0u1.hyper' default-settings='hyper' schema='Extract' tablename='Extract' update-time='08/06/2023 03:38:13 PM'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>F1</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[F1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F1</remote-alias>
+              <ordinal>0</ordinal>
+              <family>sect01b_202308061133.txt</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sect01b_202308061133.txt_C1DDC7DDF4714AF7A25BA54E9FA19C2B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F2</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[F2]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F2</remote-alias>
+              <ordinal>1</ordinal>
+              <family>sect01b_202308061133.txt</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sect01b_202308061133.txt_C1DDC7DDF4714AF7A25BA54E9FA19C2B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F3</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[F3]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F3</remote-alias>
+              <ordinal>2</ordinal>
+              <family>sect01b_202308061133.txt</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sect01b_202308061133.txt_C1DDC7DDF4714AF7A25BA54E9FA19C2B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F4</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[F4]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F4</remote-alias>
+              <ordinal>3</ordinal>
+              <family>sect01b_202308061133.txt</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sect01b_202308061133.txt_C1DDC7DDF4714AF7A25BA54E9FA19C2B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F5</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[F5]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F5</remote-alias>
+              <ordinal>4</ordinal>
+              <family>sect01b_202308061133.txt</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sect01b_202308061133.txt_C1DDC7DDF4714AF7A25BA54E9FA19C2B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F6</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[F6]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F6</remote-alias>
+              <ordinal>5</ordinal>
+              <family>sect01b_202308061133.txt</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sect01b_202308061133.txt_C1DDC7DDF4714AF7A25BA54E9FA19C2B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-aliased-fields='true' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='sect01b_202308061133.txt' id='sect01b_202308061133.txt_C1DDC7DDF4714AF7A25BA54E9FA19C2B'>
+            <properties context=''>
+              <relation connection='textscan.1asly470dqrk0y1c9x6ks0zthgcu' name='sect01b_202308061133.txt' table='[sect01b_202308061133#txt]' type='table'>
+                <columns character-set='UTF-8' header='no' locale='en_US' separator='|'>
+                  <column datatype='string' name='F1' ordinal='0' />
+                  <column datatype='date' date-parse-format='yyyy' name='F2' ordinal='1' />
+                  <column datatype='real' name='F3' ordinal='2' />
+                  <column datatype='real' name='F4' ordinal='3' />
+                  <column datatype='real' name='F5' ordinal='4' />
+                  <column datatype='string' name='F6' ordinal='5' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='sect01b_202308060421' inline='true' name='federated.1czuz3g11p2ml312h00xu00gbiez' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='sect01b_202308060421' name='semistructpassivestore-direct.1oogoxe1gxy1zs150h7r906gn42w'>
+            <connection class='semistructpassivestore-direct' directory='C:/Users/Abhishek Dasgupta/Desktop/Databases/SSDI Data Single Table' filename='sect01b_202308060421.json' server='' workgroup-auth-mode='as-is'>
+              <semistruct-schemas>
+                <semistruct-schema table='[sect01b_202308060421.json]'>
+                  <map key='SELECT &quot;Year&quot;, CAST(REPLACE(Total, &apos;,&apos;, &apos;&apos;) AS INTEGER) AS TotalInt&#13;&#10;FROM sect01b&#13;&#10;ORDER BY TotalInt DESC' value='true' />
+                  <map key='SELECT &quot;Year&quot;, CAST(REPLACE(Total, &apos;,&apos;, &apos;&apos;) AS INTEGER) AS TotalInt&#13;&#10;FROM sect01b&#13;&#10;ORDER BY TotalInt DESC.Value' value='true' />
+                  <map key='{root}' value='true' />
+                </semistruct-schema>
+              </semistruct-schemas>
+            </connection>
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='semistructpassivestore-direct.1oogoxe1gxy1zs150h7r906gn42w' name='sect01b_202308060421.json' table='[sect01b_202308060421.json]' type='table' />
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='semistructpassivestore-direct.1oogoxe1gxy1zs150h7r906gn42w' name='sect01b_202308060421.json' table='[sect01b_202308060421.json]' type='table' />
+        <cols>
+          <map key='[Document Index (generated)]' value='[sect01b_202308060421.json].[Document Index (generated)]' />
+          <map key='[SELECT &quot;Year&quot;, CAST(REPLACE(Total, &apos;,&apos;, &apos;&apos;) AS INTEGER) AS TotalInt&#13;&#10;FROM sect01b&#13;&#10;ORDER BY TotalInt DESC Index (generated)]' value='[sect01b_202308060421.json].[SELECT &quot;Year&quot;, CAST(REPLACE(Total, &apos;,&apos;, &apos;&apos;) AS INTEGER) AS TotalInt&#13;&#10;FROM sect01b&#13;&#10;ORDER BY TotalInt DESC.Index (generated)]' />
+          <map key='[TotalInt]' value='[sect01b_202308060421.json].[SELECT &quot;Year&quot;, CAST(REPLACE(Total, &apos;,&apos;, &apos;&apos;) AS INTEGER) AS TotalInt&#13;&#10;FROM sect01b&#13;&#10;ORDER BY TotalInt DESC.Value.TotalInt]' />
+          <map key='[Year]' value='[sect01b_202308060421.json].[SELECT &quot;Year&quot;, CAST(REPLACE(Total, &apos;,&apos;, &apos;&apos;) AS INTEGER) AS TotalInt&#13;&#10;FROM sect01b&#13;&#10;ORDER BY TotalInt DESC.Value.Year]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Document Index (generated)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Document Index (generated)]</local-name>
+            <parent-name>[sect01b_202308060421.json]</parent-name>
+            <remote-alias>Document Index (generated)</remote-alias>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sect01b_202308060421.json_D398CE56A1EA4752AC6644408C2E6C74]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SELECT &quot;Year&quot;, CAST(REPLACE(Total, &apos;,&apos;, &apos;&apos;) AS INTEGER) AS TotalInt&#13;
+FROM sect01b&#13;
+ORDER BY TotalInt DESC.Index (generated)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[SELECT &quot;Year&quot;, CAST(REPLACE(Total, &apos;,&apos;, &apos;&apos;) AS INTEGER) AS TotalInt&#13;
+FROM sect01b&#13;
+ORDER BY TotalInt DESC Index (generated)]</local-name>
+            <parent-name>[sect01b_202308060421.json]</parent-name>
+            <remote-alias>SELECT &quot;Year&quot;, CAST(REPLACE(Total, &apos;,&apos;, &apos;&apos;) AS INTEGER) AS TotalInt&#13;
+FROM sect01b&#13;
+ORDER BY TotalInt DESC.Index (generated)</remote-alias>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sect01b_202308060421.json_D398CE56A1EA4752AC6644408C2E6C74]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SELECT &quot;Year&quot;, CAST(REPLACE(Total, &apos;,&apos;, &apos;&apos;) AS INTEGER) AS TotalInt&#13;
+FROM sect01b&#13;
+ORDER BY TotalInt DESC.Value.TotalInt</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[TotalInt]</local-name>
+            <parent-name>[sect01b_202308060421.json]</parent-name>
+            <remote-alias>SELECT &quot;Year&quot;, CAST(REPLACE(Total, &apos;,&apos;, &apos;&apos;) AS INTEGER) AS TotalInt&#13;
+FROM sect01b&#13;
+ORDER BY TotalInt DESC.Value.TotalInt</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sect01b_202308060421.json_D398CE56A1EA4752AC6644408C2E6C74]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SELECT &quot;Year&quot;, CAST(REPLACE(Total, &apos;,&apos;, &apos;&apos;) AS INTEGER) AS TotalInt&#13;
+FROM sect01b&#13;
+ORDER BY TotalInt DESC.Value.Year</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[sect01b_202308060421.json]</parent-name>
+            <remote-alias>SELECT &quot;Year&quot;, CAST(REPLACE(Total, &apos;,&apos;, &apos;&apos;) AS INTEGER) AS TotalInt&#13;
+FROM sect01b&#13;
+ORDER BY TotalInt DESC.Value.Year</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sect01b_202308060421.json_D398CE56A1EA4752AC6644408C2E6C74]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='Sum' datatype='integer' name='[Document Index (generated)]' role='dimension' type='ordinal'>
+        <desc>
+          <formatted-text>
+            <run>Document Index (generated)</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='integer' is-auto-gen-lod-field='true' name='[Number of Records per SELECT &quot;Year&quot;, CAST(REPLACE(Total, &apos;,&apos;, &apos;&apos;) AS INTEGER) AS TotalInt&#13;&#10;FROM sect01b&#13;&#10;ORDER BY TotalInt DESC]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{ INCLUDE [Document Index (generated)] : COUNTD([SELECT &quot;Year&quot;, CAST(REPLACE(Total, &apos;,&apos;, &apos;&apos;) AS INTEGER) AS TotalInt&#13;&#10;FROM sect01b&#13;&#10;ORDER BY TotalInt DESC Index (generated)]) }' />
+        <desc>
+          <formatted-text>
+            <run>A calculated measure that is at SELECT &quot;Year&quot;, CAST(REPLACE(Total, &apos;,&apos;, &apos;&apos;) AS INTEGER) AS TotalInt&#13;
+FROM sect01b&#13;
+ORDER BY TotalInt DESC level of detail</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='integer' is-auto-gen-lod-field='true' name='[Number of Records per sect01b_202308060421.json]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNTD([Document Index (generated)])' />
+        <desc>
+          <formatted-text>
+            <run>A calculated measure that is at sect01b_202308060421.json level of detail</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column aggregation='Sum' datatype='integer' name='[SELECT &quot;Year&quot;, CAST(REPLACE(Total, &apos;,&apos;, &apos;&apos;) AS INTEGER) AS TotalInt&#13;&#10;FROM sect01b&#13;&#10;ORDER BY TotalInt DESC Index (generated)]' role='dimension' type='ordinal'>
+        <desc>
+          <formatted-text>
+            <run>SELECT Year, CAST(REPLACE(Total, &apos;,&apos;, &apos;&apos;) AS INTEGER) AS TotalInt&#13;
+FROM sect01b&#13;
+ORDER BY TotalInt DESC.Index (generated)</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Total Int' datatype='real' name='[TotalInt]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>SELECT Year, CAST(REPLACE(Total, &apos;,&apos;, &apos;&apos;) AS INTEGER) AS TotalInt&#13;
+FROM sect01b&#13;
+ORDER BY TotalInt DESC.Value.TotalInt</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='string' name='[Year]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>SELECT Year, CAST(REPLACE(Total, &apos;,&apos;, &apos;&apos;) AS INTEGER) AS TotalInt&#13;
+FROM sect01b&#13;
+ORDER BY TotalInt DESC.Value.Year</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='sect01b_202308060421.json' datatype='table' name='[__tableau_internal_object_id__].[sect01b_202308060421.json_D398CE56A1EA4752AC6644408C2E6C74]' role='measure' type='quantitative' />
+      <_.fcp.SchemaViewerObjectModel.false...folder name='SELECT Year, CAST(REPLACE(Total, &apos;,&apos;, &apos;&apos;) AS INTEGER) AS TotalInt&#13;&#10;FROM sect01b&#13;&#10;ORDER BY TotalInt DESC' role='dimensions'>
+        <folder-item name='[SELECT &quot;Year&quot;, CAST(REPLACE(Total, &apos;,&apos;, &apos;&apos;) AS INTEGER) AS TotalInt&#13;&#10;FROM sect01b&#13;&#10;ORDER BY TotalInt DESC Index (generated)]' type='field' />
+        <folder-item name='[Year]' type='field' />
+      </_.fcp.SchemaViewerObjectModel.false...folder>
+      <_.fcp.SchemaViewerObjectModel.false...folder name='Sect01B 202308060421' role='dimensions'>
+        <folder-item name='[Document Index (generated)]' type='field' />
+      </_.fcp.SchemaViewerObjectModel.false...folder>
+      <_.fcp.SchemaViewerObjectModel.true...folders-common>
+        <folder name='SELECT Year, CAST(REPLACE(Total, &apos;,&apos;, &apos;&apos;) AS INTEGER) AS TotalInt&#13;&#10;FROM sect01b&#13;&#10;ORDER BY TotalInt DESC'>
+          <folder-item name='[SELECT &quot;Year&quot;, CAST(REPLACE(Total, &apos;,&apos;, &apos;&apos;) AS INTEGER) AS TotalInt&#13;&#10;FROM sect01b&#13;&#10;ORDER BY TotalInt DESC Index (generated)]' type='field' />
+          <folder-item name='[Year]' type='field' />
+        </folder>
+        <folder name='Sect01B 202308060421'>
+          <folder-item name='[Document Index (generated)]' type='field' />
+        </folder>
+      </_.fcp.SchemaViewerObjectModel.true...folders-common>
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection authentication='auth-none' author-locale='en_US' class='hyper' dbname='Data/Extracts/federated_1czuz3g11p2ml312h00xu0.hyper' default-settings='hyper' schema='Extract' tablename='Extract' update-time='08/06/2023 03:38:46 PM'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <cols>
+            <map key='[Document Index (generated)]' value='[Extract].[Document Index (generated)]' />
+            <map key='[SELECT &quot;Year&quot;, CAST(REPLACE(Total, &apos;,&apos;, &apos;&apos;) AS INTEGER) AS TotalInt&#13;&#10;FROM sect01b&#13;&#10;ORDER BY TotalInt DESC Index (generated)]' value='[Extract].[SELECT &quot;Year&quot;, CAST(REPLACE(Total, &apos;,&apos;, &apos;&apos;) AS INTEGER) AS TotalInt&#13;&#10;FROM sect01b&#13;&#10;ORDER BY TotalInt DESC.Index (generated)]' />
+            <map key='[TotalInt]' value='[Extract].[SELECT &quot;Year&quot;, CAST(REPLACE(Total, &apos;,&apos;, &apos;&apos;) AS INTEGER) AS TotalInt&#13;&#10;FROM sect01b&#13;&#10;ORDER BY TotalInt DESC.Value.TotalInt]' />
+            <map key='[Year]' value='[Extract].[SELECT &quot;Year&quot;, CAST(REPLACE(Total, &apos;,&apos;, &apos;&apos;) AS INTEGER) AS TotalInt&#13;&#10;FROM sect01b&#13;&#10;ORDER BY TotalInt DESC.Value.Year]' />
+          </cols>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Document Index (generated)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Document Index (generated)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Document Index (generated)</remote-alias>
+              <ordinal>0</ordinal>
+              <family>sect01b_202308060421.json</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sect01b_202308060421.json_D398CE56A1EA4752AC6644408C2E6C74]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SELECT &quot;Year&quot;, CAST(REPLACE(Total, &apos;,&apos;, &apos;&apos;) AS INTEGER) AS TotalInt&#13;
+FROM sect01b&#13;
+ORDER BY TotalInt DESC.Index (generated)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[SELECT &quot;Year&quot;, CAST(REPLACE(Total, &apos;,&apos;, &apos;&apos;) AS INTEGER) AS TotalInt&#13;
+FROM sect01b&#13;
+ORDER BY TotalInt DESC Index (generated)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>SELECT &quot;Year&quot;, CAST(REPLACE(Total, &apos;,&apos;, &apos;&apos;) AS INTEGER) AS TotalInt&#13;
+FROM sect01b&#13;
+ORDER BY TotalInt DESC.Index (generated)</remote-alias>
+              <ordinal>1</ordinal>
+              <family>sect01b_202308060421.json</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>69</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sect01b_202308060421.json_D398CE56A1EA4752AC6644408C2E6C74]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SELECT &quot;Year&quot;, CAST(REPLACE(Total, &apos;,&apos;, &apos;&apos;) AS INTEGER) AS TotalInt&#13;
+FROM sect01b&#13;
+ORDER BY TotalInt DESC.Value.TotalInt</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[TotalInt]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>SELECT &quot;Year&quot;, CAST(REPLACE(Total, &apos;,&apos;, &apos;&apos;) AS INTEGER) AS TotalInt&#13;
+FROM sect01b&#13;
+ORDER BY TotalInt DESC.Value.TotalInt</remote-alias>
+              <ordinal>2</ordinal>
+              <family>sect01b_202308060421.json</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>63</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sect01b_202308060421.json_D398CE56A1EA4752AC6644408C2E6C74]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SELECT &quot;Year&quot;, CAST(REPLACE(Total, &apos;,&apos;, &apos;&apos;) AS INTEGER) AS TotalInt&#13;
+FROM sect01b&#13;
+ORDER BY TotalInt DESC.Value.Year</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>SELECT &quot;Year&quot;, CAST(REPLACE(Total, &apos;,&apos;, &apos;&apos;) AS INTEGER) AS TotalInt&#13;
+FROM sect01b&#13;
+ORDER BY TotalInt DESC.Value.Year</remote-alias>
+              <ordinal>3</ordinal>
+              <family>sect01b_202308060421.json</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>63</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sect01b_202308060421.json_D398CE56A1EA4752AC6644408C2E6C74]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='false' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='sect01b_202308060421.json' id='sect01b_202308060421.json_D398CE56A1EA4752AC6644408C2E6C74'>
+            <properties context=''>
+              <relation connection='semistructpassivestore-direct.1oogoxe1gxy1zs150h7r906gn42w' name='sect01b_202308060421.json' table='[sect01b_202308060421.json]' type='table' />
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='Prev_Difference_202308061403' inline='true' name='federated.1ny5kz90p6pxnp1h80tlm0yxvjpr' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Prev_Difference_202308061403' name='semistructpassivestore-direct.0n5hnzr0w014zy15jj7di0ybecg3'>
+            <connection class='semistructpassivestore-direct' directory='C:/Users/Abhishek Dasgupta/Desktop/Databases/SSDI Data Single Table' filename='Prev_Difference_202308061403.json' server='' workgroup-auth-mode='as-is'>
+              <semistruct-schemas>
+                <semistruct-schema table='[Prev_Difference_202308061403.json]'>
+                  <map key='-- Find the difference by which the total benefits decreased from the previous year&#13;&#10;-- Created table from previous query results for efficiency&#13;&#10;WITH Prev_Difference AS (&#13;&#10;  SELECT CAST(REPLACE(&quot;Year&quot;, &apos;,&apos;, &apos;&apos;) AS TEXT) AS &quot;Year&quot;, &#13;&#10;  &#9; &#9; (&quot;Total Mon for Workers (x$1000)&quot; - &quot;prev_Total Mon for Workers (x$1000)&quot;) AS &quot;Workers Difference&quot;,&#13;&#10;&#9;&#9; (&quot;Total Mon for Widow(er)s (x$1000)&quot; - &quot;prev_Total Mon for Widow(er)s (x$1000)&quot;) AS &quot;Widow(er)s Difference&quot;,&#13;&#10;&#9;&#9; (&quot;Total Mon for Adult children (x$1000)&quot; - &quot;prev_Total Mon for Adult children (x$1000)&quot;) AS &quot;Adult Children Difference&quot;&#13;&#10;  FROM TotalMonthlyBenefits &#13;&#10;  ORDER BY &quot;Year&quot;&#13;&#10;)&#13;&#10;SELECT * &#13;&#10;FROM Prev_Difference' value='true' />
+                  <map key='-- Find the difference by which the total benefits decreased from the previous year&#13;&#10;-- Created table from previous query results for efficiency&#13;&#10;WITH Prev_Difference AS (&#13;&#10;  SELECT CAST(REPLACE(&quot;Year&quot;, &apos;,&apos;, &apos;&apos;) AS TEXT) AS &quot;Year&quot;, &#13;&#10;  &#9; &#9; (&quot;Total Mon for Workers (x$1000)&quot; - &quot;prev_Total Mon for Workers (x$1000)&quot;) AS &quot;Workers Difference&quot;,&#13;&#10;&#9;&#9; (&quot;Total Mon for Widow(er)s (x$1000)&quot; - &quot;prev_Total Mon for Widow(er)s (x$1000)&quot;) AS &quot;Widow(er)s Difference&quot;,&#13;&#10;&#9;&#9; (&quot;Total Mon for Adult children (x$1000)&quot; - &quot;prev_Total Mon for Adult children (x$1000)&quot;) AS &quot;Adult Children Difference&quot;&#13;&#10;  FROM TotalMonthlyBenefits &#13;&#10;  ORDER BY &quot;Year&quot;&#13;&#10;)&#13;&#10;SELECT * &#13;&#10;FROM Prev_Difference.Value' value='true' />
+                  <map key='{root}' value='true' />
+                </semistruct-schema>
+              </semistruct-schemas>
+            </connection>
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='semistructpassivestore-direct.0n5hnzr0w014zy15jj7di0ybecg3' name='Prev_Difference_202308061403.json' table='[Prev_Difference_202308061403.json]' type='table' />
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='semistructpassivestore-direct.0n5hnzr0w014zy15jj7di0ybecg3' name='Prev_Difference_202308061403.json' table='[Prev_Difference_202308061403.json]' type='table' />
+        <cols>
+          <map key='[-- Find the difference by which the total benefits decreased from the previous year&#13;&#10;-- Created table from previous query results for efficiency&#13;&#10;WITH Prev_Difference AS (&#13;&#10;  SELECT CAST(REPLACE(&quot;Year&quot;, &apos;,&apos;, &apos;&apos;) AS TEXT) AS &quot;Year&quot;, &#13;&#10;  &#9; &#9; (&quot;Total Mon for Workers (x$1000)&quot; - &quot;prev_Total Mon for Workers (x$1000)&quot;) AS &quot;Workers Difference&quot;,&#13;&#10;&#9;&#9; (&quot;Total Mon for Widow(er)s (x$1000)&quot; - &quot;prev_Total Mon for Widow(er)s (x$1000)&quot;) AS &quot;Widow(er)s Difference&quot;,&#13;&#10;&#9;&#9; (&quot;Total Mon for Adult children (x$1000)&quot; - &quot;prev_Total Mon for Adult children (x$1000)&quot;) AS &quot;Adult Children Difference&quot;&#13;&#10;  FROM TotalMonthlyBenefits &#13;&#10;  ORDER BY &quot;Year&quot;&#13;&#10;)&#13;&#10;SELECT * &#13;&#10;FROM Prev_Difference Index (generated)]' value='[Prev_Difference_202308061403.json].[-- Find the difference by which the total benefits decreased from the previous year&#13;&#10;-- Created table from previous query results for efficiency&#13;&#10;WITH Prev_Difference AS (&#13;&#10;  SELECT CAST(REPLACE(&quot;Year&quot;, &apos;,&apos;, &apos;&apos;) AS TEXT) AS &quot;Year&quot;, &#13;&#10;  &#9; &#9; (&quot;Total Mon for Workers (x$1000)&quot; - &quot;prev_Total Mon for Workers (x$1000)&quot;) AS &quot;Workers Difference&quot;,&#13;&#10;&#9;&#9; (&quot;Total Mon for Widow(er)s (x$1000)&quot; - &quot;prev_Total Mon for Widow(er)s (x$1000)&quot;) AS &quot;Widow(er)s Difference&quot;,&#13;&#10;&#9;&#9; (&quot;Total Mon for Adult children (x$1000)&quot; - &quot;prev_Total Mon for Adult children (x$1000)&quot;) AS &quot;Adult Children Difference&quot;&#13;&#10;  FROM TotalMonthlyBenefits &#13;&#10;  ORDER BY &quot;Year&quot;&#13;&#10;)&#13;&#10;SELECT * &#13;&#10;FROM Prev_Difference.Index (generated)]' />
+          <map key='[Adult Children Difference]' value='[Prev_Difference_202308061403.json].[-- Find the difference by which the total benefits decreased from the previous year&#13;&#10;-- Created table from previous query results for efficiency&#13;&#10;WITH Prev_Difference AS (&#13;&#10;  SELECT CAST(REPLACE(&quot;Year&quot;, &apos;,&apos;, &apos;&apos;) AS TEXT) AS &quot;Year&quot;, &#13;&#10;  &#9; &#9; (&quot;Total Mon for Workers (x$1000)&quot; - &quot;prev_Total Mon for Workers (x$1000)&quot;) AS &quot;Workers Difference&quot;,&#13;&#10;&#9;&#9; (&quot;Total Mon for Widow(er)s (x$1000)&quot; - &quot;prev_Total Mon for Widow(er)s (x$1000)&quot;) AS &quot;Widow(er)s Difference&quot;,&#13;&#10;&#9;&#9; (&quot;Total Mon for Adult children (x$1000)&quot; - &quot;prev_Total Mon for Adult children (x$1000)&quot;) AS &quot;Adult Children Difference&quot;&#13;&#10;  FROM TotalMonthlyBenefits &#13;&#10;  ORDER BY &quot;Year&quot;&#13;&#10;)&#13;&#10;SELECT * &#13;&#10;FROM Prev_Difference.Value.Adult Children Difference]' />
+          <map key='[Document Index (generated)]' value='[Prev_Difference_202308061403.json].[Document Index (generated)]' />
+          <map key='[Widow(er)s Difference]' value='[Prev_Difference_202308061403.json].[-- Find the difference by which the total benefits decreased from the previous year&#13;&#10;-- Created table from previous query results for efficiency&#13;&#10;WITH Prev_Difference AS (&#13;&#10;  SELECT CAST(REPLACE(&quot;Year&quot;, &apos;,&apos;, &apos;&apos;) AS TEXT) AS &quot;Year&quot;, &#13;&#10;  &#9; &#9; (&quot;Total Mon for Workers (x$1000)&quot; - &quot;prev_Total Mon for Workers (x$1000)&quot;) AS &quot;Workers Difference&quot;,&#13;&#10;&#9;&#9; (&quot;Total Mon for Widow(er)s (x$1000)&quot; - &quot;prev_Total Mon for Widow(er)s (x$1000)&quot;) AS &quot;Widow(er)s Difference&quot;,&#13;&#10;&#9;&#9; (&quot;Total Mon for Adult children (x$1000)&quot; - &quot;prev_Total Mon for Adult children (x$1000)&quot;) AS &quot;Adult Children Difference&quot;&#13;&#10;  FROM TotalMonthlyBenefits &#13;&#10;  ORDER BY &quot;Year&quot;&#13;&#10;)&#13;&#10;SELECT * &#13;&#10;FROM Prev_Difference.Value.Widow(er)s Difference]' />
+          <map key='[Workers Difference]' value='[Prev_Difference_202308061403.json].[-- Find the difference by which the total benefits decreased from the previous year&#13;&#10;-- Created table from previous query results for efficiency&#13;&#10;WITH Prev_Difference AS (&#13;&#10;  SELECT CAST(REPLACE(&quot;Year&quot;, &apos;,&apos;, &apos;&apos;) AS TEXT) AS &quot;Year&quot;, &#13;&#10;  &#9; &#9; (&quot;Total Mon for Workers (x$1000)&quot; - &quot;prev_Total Mon for Workers (x$1000)&quot;) AS &quot;Workers Difference&quot;,&#13;&#10;&#9;&#9; (&quot;Total Mon for Widow(er)s (x$1000)&quot; - &quot;prev_Total Mon for Widow(er)s (x$1000)&quot;) AS &quot;Widow(er)s Difference&quot;,&#13;&#10;&#9;&#9; (&quot;Total Mon for Adult children (x$1000)&quot; - &quot;prev_Total Mon for Adult children (x$1000)&quot;) AS &quot;Adult Children Difference&quot;&#13;&#10;  FROM TotalMonthlyBenefits &#13;&#10;  ORDER BY &quot;Year&quot;&#13;&#10;)&#13;&#10;SELECT * &#13;&#10;FROM Prev_Difference.Value.Workers Difference]' />
+          <map key='[Year]' value='[Prev_Difference_202308061403.json].[-- Find the difference by which the total benefits decreased from the previous year&#13;&#10;-- Created table from previous query results for efficiency&#13;&#10;WITH Prev_Difference AS (&#13;&#10;  SELECT CAST(REPLACE(&quot;Year&quot;, &apos;,&apos;, &apos;&apos;) AS TEXT) AS &quot;Year&quot;, &#13;&#10;  &#9; &#9; (&quot;Total Mon for Workers (x$1000)&quot; - &quot;prev_Total Mon for Workers (x$1000)&quot;) AS &quot;Workers Difference&quot;,&#13;&#10;&#9;&#9; (&quot;Total Mon for Widow(er)s (x$1000)&quot; - &quot;prev_Total Mon for Widow(er)s (x$1000)&quot;) AS &quot;Widow(er)s Difference&quot;,&#13;&#10;&#9;&#9; (&quot;Total Mon for Adult children (x$1000)&quot; - &quot;prev_Total Mon for Adult children (x$1000)&quot;) AS &quot;Adult Children Difference&quot;&#13;&#10;  FROM TotalMonthlyBenefits &#13;&#10;  ORDER BY &quot;Year&quot;&#13;&#10;)&#13;&#10;SELECT * &#13;&#10;FROM Prev_Difference.Value.Year]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Document Index (generated)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Document Index (generated)]</local-name>
+            <parent-name>[Prev_Difference_202308061403.json]</parent-name>
+            <remote-alias>Document Index (generated)</remote-alias>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Prev_Difference_202308061403.json_44F3C2D19B9243E78B63D52C0DAF0C2E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>-- Find the difference by which the total benefits decreased from the previous year&#13;
+-- Created table from previous query results for efficiency&#13;
+WITH Prev_Difference AS (&#13;
+  SELECT CAST(REPLACE(&quot;Year&quot;, &apos;,&apos;, &apos;&apos;) AS TEXT) AS &quot;Year&quot;, &#13;
+  	 	 (&quot;Total Mon for Workers (x$1000)&quot; - &quot;prev_Total Mon for Workers (x$1000)&quot;) AS &quot;Workers Difference&quot;,&#13;
+		 (&quot;Total Mon for Widow(er)s (x$1000)&quot; - &quot;prev_Total Mon for Widow(er)s (x$1000)&quot;) AS &quot;Widow(er)s Difference&quot;,&#13;
+		 (&quot;Total Mon for Adult children (x$1000)&quot; - &quot;prev_Total Mon for Adult children (x$1000)&quot;) AS &quot;Adult Children Difference&quot;&#13;
+  FROM TotalMonthlyBenefits &#13;
+  ORDER BY &quot;Year&quot;&#13;
+)&#13;
+SELECT * &#13;
+FROM Prev_Difference.Index (generated)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[-- Find the difference by which the total benefits decreased from the previous year&#13;
+-- Created table from previous query results for efficiency&#13;
+WITH Prev_Difference AS (&#13;
+  SELECT CAST(REPLACE(&quot;Year&quot;, &apos;,&apos;, &apos;&apos;) AS TEXT) AS &quot;Year&quot;, &#13;
+  	 	 (&quot;Total Mon for Workers (x$1000)&quot; - &quot;prev_Total Mon for Workers (x$1000)&quot;) AS &quot;Workers Difference&quot;,&#13;
+		 (&quot;Total Mon for Widow(er)s (x$1000)&quot; - &quot;prev_Total Mon for Widow(er)s (x$1000)&quot;) AS &quot;Widow(er)s Difference&quot;,&#13;
+		 (&quot;Total Mon for Adult children (x$1000)&quot; - &quot;prev_Total Mon for Adult children (x$1000)&quot;) AS &quot;Adult Children Difference&quot;&#13;
+  FROM TotalMonthlyBenefits &#13;
+  ORDER BY &quot;Year&quot;&#13;
+)&#13;
+SELECT * &#13;
+FROM Prev_Difference Index (generated)]</local-name>
+            <parent-name>[Prev_Difference_202308061403.json]</parent-name>
+            <remote-alias>-- Find the difference by which the total benefits decreased from the previous year&#13;
+-- Created table from previous query results for efficiency&#13;
+WITH Prev_Difference AS (&#13;
+  SELECT CAST(REPLACE(&quot;Year&quot;, &apos;,&apos;, &apos;&apos;) AS TEXT) AS &quot;Year&quot;, &#13;
+  	 	 (&quot;Total Mon for Workers (x$1000)&quot; - &quot;prev_Total Mon for Workers (x$1000)&quot;) AS &quot;Workers Difference&quot;,&#13;
+		 (&quot;Total Mon for Widow(er)s (x$1000)&quot; - &quot;prev_Total Mon for Widow(er)s (x$1000)&quot;) AS &quot;Widow(er)s Difference&quot;,&#13;
+		 (&quot;Total Mon for Adult children (x$1000)&quot; - &quot;prev_Total Mon for Adult children (x$1000)&quot;) AS &quot;Adult Children Difference&quot;&#13;
+  FROM TotalMonthlyBenefits &#13;
+  ORDER BY &quot;Year&quot;&#13;
+)&#13;
+SELECT * &#13;
+FROM Prev_Difference.Index (generated)</remote-alias>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Prev_Difference_202308061403.json_44F3C2D19B9243E78B63D52C0DAF0C2E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>-- Find the difference by which the total benefits decreased from the previous year&#13;
+-- Created table from previous query results for efficiency&#13;
+WITH Prev_Difference AS (&#13;
+  SELECT CAST(REPLACE(&quot;Year&quot;, &apos;,&apos;, &apos;&apos;) AS TEXT) AS &quot;Year&quot;, &#13;
+  	 	 (&quot;Total Mon for Workers (x$1000)&quot; - &quot;prev_Total Mon for Workers (x$1000)&quot;) AS &quot;Workers Difference&quot;,&#13;
+		 (&quot;Total Mon for Widow(er)s (x$1000)&quot; - &quot;prev_Total Mon for Widow(er)s (x$1000)&quot;) AS &quot;Widow(er)s Difference&quot;,&#13;
+		 (&quot;Total Mon for Adult children (x$1000)&quot; - &quot;prev_Total Mon for Adult children (x$1000)&quot;) AS &quot;Adult Children Difference&quot;&#13;
+  FROM TotalMonthlyBenefits &#13;
+  ORDER BY &quot;Year&quot;&#13;
+)&#13;
+SELECT * &#13;
+FROM Prev_Difference.Value.Adult Children Difference</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Adult Children Difference]</local-name>
+            <parent-name>[Prev_Difference_202308061403.json]</parent-name>
+            <remote-alias>-- Find the difference by which the total benefits decreased from the previous year&#13;
+-- Created table from previous query results for efficiency&#13;
+WITH Prev_Difference AS (&#13;
+  SELECT CAST(REPLACE(&quot;Year&quot;, &apos;,&apos;, &apos;&apos;) AS TEXT) AS &quot;Year&quot;, &#13;
+  	 	 (&quot;Total Mon for Workers (x$1000)&quot; - &quot;prev_Total Mon for Workers (x$1000)&quot;) AS &quot;Workers Difference&quot;,&#13;
+		 (&quot;Total Mon for Widow(er)s (x$1000)&quot; - &quot;prev_Total Mon for Widow(er)s (x$1000)&quot;) AS &quot;Widow(er)s Difference&quot;,&#13;
+		 (&quot;Total Mon for Adult children (x$1000)&quot; - &quot;prev_Total Mon for Adult children (x$1000)&quot;) AS &quot;Adult Children Difference&quot;&#13;
+  FROM TotalMonthlyBenefits &#13;
+  ORDER BY &quot;Year&quot;&#13;
+)&#13;
+SELECT * &#13;
+FROM Prev_Difference.Value.Adult Children Difference</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Prev_Difference_202308061403.json_44F3C2D19B9243E78B63D52C0DAF0C2E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>-- Find the difference by which the total benefits decreased from the previous year&#13;
+-- Created table from previous query results for efficiency&#13;
+WITH Prev_Difference AS (&#13;
+  SELECT CAST(REPLACE(&quot;Year&quot;, &apos;,&apos;, &apos;&apos;) AS TEXT) AS &quot;Year&quot;, &#13;
+  	 	 (&quot;Total Mon for Workers (x$1000)&quot; - &quot;prev_Total Mon for Workers (x$1000)&quot;) AS &quot;Workers Difference&quot;,&#13;
+		 (&quot;Total Mon for Widow(er)s (x$1000)&quot; - &quot;prev_Total Mon for Widow(er)s (x$1000)&quot;) AS &quot;Widow(er)s Difference&quot;,&#13;
+		 (&quot;Total Mon for Adult children (x$1000)&quot; - &quot;prev_Total Mon for Adult children (x$1000)&quot;) AS &quot;Adult Children Difference&quot;&#13;
+  FROM TotalMonthlyBenefits &#13;
+  ORDER BY &quot;Year&quot;&#13;
+)&#13;
+SELECT * &#13;
+FROM Prev_Difference.Value.Widow(er)s Difference</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Widow(er)s Difference]</local-name>
+            <parent-name>[Prev_Difference_202308061403.json]</parent-name>
+            <remote-alias>-- Find the difference by which the total benefits decreased from the previous year&#13;
+-- Created table from previous query results for efficiency&#13;
+WITH Prev_Difference AS (&#13;
+  SELECT CAST(REPLACE(&quot;Year&quot;, &apos;,&apos;, &apos;&apos;) AS TEXT) AS &quot;Year&quot;, &#13;
+  	 	 (&quot;Total Mon for Workers (x$1000)&quot; - &quot;prev_Total Mon for Workers (x$1000)&quot;) AS &quot;Workers Difference&quot;,&#13;
+		 (&quot;Total Mon for Widow(er)s (x$1000)&quot; - &quot;prev_Total Mon for Widow(er)s (x$1000)&quot;) AS &quot;Widow(er)s Difference&quot;,&#13;
+		 (&quot;Total Mon for Adult children (x$1000)&quot; - &quot;prev_Total Mon for Adult children (x$1000)&quot;) AS &quot;Adult Children Difference&quot;&#13;
+  FROM TotalMonthlyBenefits &#13;
+  ORDER BY &quot;Year&quot;&#13;
+)&#13;
+SELECT * &#13;
+FROM Prev_Difference.Value.Widow(er)s Difference</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Prev_Difference_202308061403.json_44F3C2D19B9243E78B63D52C0DAF0C2E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>-- Find the difference by which the total benefits decreased from the previous year&#13;
+-- Created table from previous query results for efficiency&#13;
+WITH Prev_Difference AS (&#13;
+  SELECT CAST(REPLACE(&quot;Year&quot;, &apos;,&apos;, &apos;&apos;) AS TEXT) AS &quot;Year&quot;, &#13;
+  	 	 (&quot;Total Mon for Workers (x$1000)&quot; - &quot;prev_Total Mon for Workers (x$1000)&quot;) AS &quot;Workers Difference&quot;,&#13;
+		 (&quot;Total Mon for Widow(er)s (x$1000)&quot; - &quot;prev_Total Mon for Widow(er)s (x$1000)&quot;) AS &quot;Widow(er)s Difference&quot;,&#13;
+		 (&quot;Total Mon for Adult children (x$1000)&quot; - &quot;prev_Total Mon for Adult children (x$1000)&quot;) AS &quot;Adult Children Difference&quot;&#13;
+  FROM TotalMonthlyBenefits &#13;
+  ORDER BY &quot;Year&quot;&#13;
+)&#13;
+SELECT * &#13;
+FROM Prev_Difference.Value.Workers Difference</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Workers Difference]</local-name>
+            <parent-name>[Prev_Difference_202308061403.json]</parent-name>
+            <remote-alias>-- Find the difference by which the total benefits decreased from the previous year&#13;
+-- Created table from previous query results for efficiency&#13;
+WITH Prev_Difference AS (&#13;
+  SELECT CAST(REPLACE(&quot;Year&quot;, &apos;,&apos;, &apos;&apos;) AS TEXT) AS &quot;Year&quot;, &#13;
+  	 	 (&quot;Total Mon for Workers (x$1000)&quot; - &quot;prev_Total Mon for Workers (x$1000)&quot;) AS &quot;Workers Difference&quot;,&#13;
+		 (&quot;Total Mon for Widow(er)s (x$1000)&quot; - &quot;prev_Total Mon for Widow(er)s (x$1000)&quot;) AS &quot;Widow(er)s Difference&quot;,&#13;
+		 (&quot;Total Mon for Adult children (x$1000)&quot; - &quot;prev_Total Mon for Adult children (x$1000)&quot;) AS &quot;Adult Children Difference&quot;&#13;
+  FROM TotalMonthlyBenefits &#13;
+  ORDER BY &quot;Year&quot;&#13;
+)&#13;
+SELECT * &#13;
+FROM Prev_Difference.Value.Workers Difference</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Prev_Difference_202308061403.json_44F3C2D19B9243E78B63D52C0DAF0C2E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>-- Find the difference by which the total benefits decreased from the previous year&#13;
+-- Created table from previous query results for efficiency&#13;
+WITH Prev_Difference AS (&#13;
+  SELECT CAST(REPLACE(&quot;Year&quot;, &apos;,&apos;, &apos;&apos;) AS TEXT) AS &quot;Year&quot;, &#13;
+  	 	 (&quot;Total Mon for Workers (x$1000)&quot; - &quot;prev_Total Mon for Workers (x$1000)&quot;) AS &quot;Workers Difference&quot;,&#13;
+		 (&quot;Total Mon for Widow(er)s (x$1000)&quot; - &quot;prev_Total Mon for Widow(er)s (x$1000)&quot;) AS &quot;Widow(er)s Difference&quot;,&#13;
+		 (&quot;Total Mon for Adult children (x$1000)&quot; - &quot;prev_Total Mon for Adult children (x$1000)&quot;) AS &quot;Adult Children Difference&quot;&#13;
+  FROM TotalMonthlyBenefits &#13;
+  ORDER BY &quot;Year&quot;&#13;
+)&#13;
+SELECT * &#13;
+FROM Prev_Difference.Value.Year</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[Prev_Difference_202308061403.json]</parent-name>
+            <remote-alias>-- Find the difference by which the total benefits decreased from the previous year&#13;
+-- Created table from previous query results for efficiency&#13;
+WITH Prev_Difference AS (&#13;
+  SELECT CAST(REPLACE(&quot;Year&quot;, &apos;,&apos;, &apos;&apos;) AS TEXT) AS &quot;Year&quot;, &#13;
+  	 	 (&quot;Total Mon for Workers (x$1000)&quot; - &quot;prev_Total Mon for Workers (x$1000)&quot;) AS &quot;Workers Difference&quot;,&#13;
+		 (&quot;Total Mon for Widow(er)s (x$1000)&quot; - &quot;prev_Total Mon for Widow(er)s (x$1000)&quot;) AS &quot;Widow(er)s Difference&quot;,&#13;
+		 (&quot;Total Mon for Adult children (x$1000)&quot; - &quot;prev_Total Mon for Adult children (x$1000)&quot;) AS &quot;Adult Children Difference&quot;&#13;
+  FROM TotalMonthlyBenefits &#13;
+  ORDER BY &quot;Year&quot;&#13;
+)&#13;
+SELECT * &#13;
+FROM Prev_Difference.Value.Year</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Prev_Difference_202308061403.json_44F3C2D19B9243E78B63D52C0DAF0C2E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='Sum' caption='-- Find the difference by which the total benefits decreased from the previous year&#13;&#10;-- Created table from previous query results for efficiency&#13;&#10;WITH Prev Difference AS (&#13;&#10;SELECT CAST(REPLACE(&quot;Year&quot;, &apos;,&apos;, &apos;&apos;) AS TEXT) AS &quot;Year&quot;,&#13;&#10;(&quot;Total Mon for Workers (x$1000)&quot; - &quot;prev Total Mon for Workers (x$1000)&quot;) AS &quot;Workers Difference&quot;,&#13;&#10;(&quot;Total Mon for Widow(er)s (x$1000)&quot; - &quot;prev Total Mon for Widow(er)s (x$1000)&quot;) AS &quot;Widow(er)s Difference&quot;,&#13;&#10;(&quot;Total Mon for Adult children (x$1000)&quot; - &quot;prev Total Mon for Adult children (x$1000)&quot;) AS &quot;Adult Children Difference&quot;&#13;&#10;FROM TotalMonthlyBenefits&#13;&#10;ORDER BY &quot;Year&quot;&#13;&#10;)&#13;&#10;SELECT *&#13;&#10;FROM Prev Difference Index (generated)' datatype='integer' name='[-- Find the difference by which the total benefits decreased from the previous year&#13;&#10;-- Created table from previous query results for efficiency&#13;&#10;WITH Prev_Difference AS (&#13;&#10;  SELECT CAST(REPLACE(&quot;Year&quot;, &apos;,&apos;, &apos;&apos;) AS TEXT) AS &quot;Year&quot;, &#13;&#10;  &#9; &#9; (&quot;Total Mon for Workers (x$1000)&quot; - &quot;prev_Total Mon for Workers (x$1000)&quot;) AS &quot;Workers Difference&quot;,&#13;&#10;&#9;&#9; (&quot;Total Mon for Widow(er)s (x$1000)&quot; - &quot;prev_Total Mon for Widow(er)s (x$1000)&quot;) AS &quot;Widow(er)s Difference&quot;,&#13;&#10;&#9;&#9; (&quot;Total Mon for Adult children (x$1000)&quot; - &quot;prev_Total Mon for Adult children (x$1000)&quot;) AS &quot;Adult Children Difference&quot;&#13;&#10;  FROM TotalMonthlyBenefits &#13;&#10;  ORDER BY &quot;Year&quot;&#13;&#10;)&#13;&#10;SELECT * &#13;&#10;FROM Prev_Difference Index (generated)]' role='dimension' type='ordinal'>
+        <desc>
+          <formatted-text>
+            <run>-- Find the difference by which the total benefits decreased from the previous year&#13;
+-- Created table from previous query results for efficiency&#13;
+WITH Prev_Difference AS (&#13;
+  SELECT CAST(REPLACE(Year, &apos;,&apos;, &apos;&apos;) AS TEXT) AS Year, &#13;
+  	 	 (Total Mon for Workers (x$1000) - prev_Total Mon for Workers (x$1000)) AS Workers Difference,&#13;
+		 (Total Mon for Widow(er)s (x$1000) - prev_Total Mon for Widow(er)s (x$1000)) AS Widow(er)s Difference,&#13;
+		 (Total Mon for Adult children (x$1000) - prev_Total Mon for Adult children (x$1000)) AS Adult Children Difference&#13;
+  FROM TotalMonthlyBenefits &#13;
+  ORDER BY Year&#13;
+)&#13;
+SELECT * &#13;
+FROM Prev_Difference.Index (generated)</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='real' name='[Adult Children Difference]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>-- Find the difference by which the total benefits decreased from the previous year&#13;
+-- Created table from previous query results for efficiency&#13;
+WITH Prev_Difference AS (&#13;
+  SELECT CAST(REPLACE(Year, &apos;,&apos;, &apos;&apos;) AS TEXT) AS Year, &#13;
+  	 	 (Total Mon for Workers (x$1000) - prev_Total Mon for Workers (x$1000)) AS Workers Difference,&#13;
+		 (Total Mon for Widow(er)s (x$1000) - prev_Total Mon for Widow(er)s (x$1000)) AS Widow(er)s Difference,&#13;
+		 (Total Mon for Adult children (x$1000) - prev_Total Mon for Adult children (x$1000)) AS Adult Children Difference&#13;
+  FROM TotalMonthlyBenefits &#13;
+  ORDER BY Year&#13;
+)&#13;
+SELECT * &#13;
+FROM Prev_Difference.Value.Adult Children Difference</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column aggregation='Sum' datatype='integer' name='[Document Index (generated)]' role='dimension' type='ordinal'>
+        <desc>
+          <formatted-text>
+            <run>Document Index (generated)</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='integer' is-auto-gen-lod-field='true' name='[Number of Records per -- Find the difference by which the total benefits decreased from the previous year&#13;&#10;-- Created table from previous query results for efficiency&#13;&#10;WITH Prev Difference AS (&#13;&#10;SELECT CAST(REPLACE(&quot;Year&quot;, &apos;,&apos;, &apos;&apos;) AS TEXT) AS &quot;Year&quot;,&#13;&#10;(&quot;Total Mon for Workers (x$1000)&quot; - &quot;prev Total Mon for Workers (x$1000)&quot;) AS &quot;Workers Difference&quot;,&#13;&#10;(&quot;Total Mon for Widow(er)s (x$1000)&quot; - &quot;prev Total Mon for Widow(er)s (x$1000)&quot;) AS &quot;Widow(er)s Difference&quot;,&#13;&#10;(&quot;Total Mon for Adult children (x$1000)&quot; - &quot;prev Total Mon for Adult children (x$1000)&quot;) AS &quot;Adult Children Difference&quot;&#13;&#10;FROM TotalMonthlyBenefits&#13;&#10;ORDER BY &quot;Year&quot;&#13;&#10;)&#13;&#10;SELECT *&#13;&#10;FROM Prev Difference]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{ INCLUDE [Document Index (generated)] : COUNTD([-- Find the difference by which the total benefits decreased from the previous year&#13;&#10;-- Created table from previous query results for efficiency&#13;&#10;WITH Prev_Difference AS (&#13;&#10;  SELECT CAST(REPLACE(&quot;Year&quot;, &apos;,&apos;, &apos;&apos;) AS TEXT) AS &quot;Year&quot;, &#13;&#10;  &#9; &#9; (&quot;Total Mon for Workers (x$1000)&quot; - &quot;prev_Total Mon for Workers (x$1000)&quot;) AS &quot;Workers Difference&quot;,&#13;&#10;&#9;&#9; (&quot;Total Mon for Widow(er)s (x$1000)&quot; - &quot;prev_Total Mon for Widow(er)s (x$1000)&quot;) AS &quot;Widow(er)s Difference&quot;,&#13;&#10;&#9;&#9; (&quot;Total Mon for Adult children (x$1000)&quot; - &quot;prev_Total Mon for Adult children (x$1000)&quot;) AS &quot;Adult Children Difference&quot;&#13;&#10;  FROM TotalMonthlyBenefits &#13;&#10;  ORDER BY &quot;Year&quot;&#13;&#10;)&#13;&#10;SELECT * &#13;&#10;FROM Prev_Difference Index (generated)]) }' />
+        <desc>
+          <formatted-text>
+            <run>A calculated measure that is at -- Find the difference by which the total benefits decreased from the previous year&#13;
+-- Created table from previous query results for efficiency&#13;
+WITH Prev_Difference AS (&#13;
+  SELECT CAST(REPLACE(&quot;Year&quot;, &apos;,&apos;, &apos;&apos;) AS TEXT) AS &quot;Year&quot;, &#13;
+  	 	 (&quot;Total Mon for Workers (x$1000)&quot; - &quot;prev_Total Mon for Workers (x$1000)&quot;) AS &quot;Workers Difference&quot;,&#13;
+		 (&quot;Total Mon for Widow(er)s (x$1000)&quot; - &quot;prev_Total Mon for Widow(er)s (x$1000)&quot;) AS &quot;Widow(er)s Difference&quot;,&#13;
+		 (&quot;Total Mon for Adult children (x$1000)&quot; - &quot;prev_Total Mon for Adult children (x$1000)&quot;) AS &quot;Adult Children Difference&quot;&#13;
+  FROM TotalMonthlyBenefits &#13;
+  ORDER BY &quot;Year&quot;&#13;
+)&#13;
+SELECT * &#13;
+FROM Prev_Difference level of detail</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='integer' is-auto-gen-lod-field='true' name='[Number of Records per Prev_Difference_202308061403.json]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNTD([Document Index (generated)])' />
+        <desc>
+          <formatted-text>
+            <run>A calculated measure that is at Prev_Difference_202308061403.json level of detail</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='real' name='[Widow(er)s Difference]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>-- Find the difference by which the total benefits decreased from the previous year&#13;
+-- Created table from previous query results for efficiency&#13;
+WITH Prev_Difference AS (&#13;
+  SELECT CAST(REPLACE(Year, &apos;,&apos;, &apos;&apos;) AS TEXT) AS Year, &#13;
+  	 	 (Total Mon for Workers (x$1000) - prev_Total Mon for Workers (x$1000)) AS Workers Difference,&#13;
+		 (Total Mon for Widow(er)s (x$1000) - prev_Total Mon for Widow(er)s (x$1000)) AS Widow(er)s Difference,&#13;
+		 (Total Mon for Adult children (x$1000) - prev_Total Mon for Adult children (x$1000)) AS Adult Children Difference&#13;
+  FROM TotalMonthlyBenefits &#13;
+  ORDER BY Year&#13;
+)&#13;
+SELECT * &#13;
+FROM Prev_Difference.Value.Widow(er)s Difference</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='real' name='[Workers Difference]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>-- Find the difference by which the total benefits decreased from the previous year&#13;
+-- Created table from previous query results for efficiency&#13;
+WITH Prev_Difference AS (&#13;
+  SELECT CAST(REPLACE(Year, &apos;,&apos;, &apos;&apos;) AS TEXT) AS Year, &#13;
+  	 	 (Total Mon for Workers (x$1000) - prev_Total Mon for Workers (x$1000)) AS Workers Difference,&#13;
+		 (Total Mon for Widow(er)s (x$1000) - prev_Total Mon for Widow(er)s (x$1000)) AS Widow(er)s Difference,&#13;
+		 (Total Mon for Adult children (x$1000) - prev_Total Mon for Adult children (x$1000)) AS Adult Children Difference&#13;
+  FROM TotalMonthlyBenefits &#13;
+  ORDER BY Year&#13;
+)&#13;
+SELECT * &#13;
+FROM Prev_Difference.Value.Workers Difference</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='string' name='[Year]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>-- Find the difference by which the total benefits decreased from the previous year&#13;
+-- Created table from previous query results for efficiency&#13;
+WITH Prev_Difference AS (&#13;
+  SELECT CAST(REPLACE(Year, &apos;,&apos;, &apos;&apos;) AS TEXT) AS Year, &#13;
+  	 	 (Total Mon for Workers (x$1000) - prev_Total Mon for Workers (x$1000)) AS Workers Difference,&#13;
+		 (Total Mon for Widow(er)s (x$1000) - prev_Total Mon for Widow(er)s (x$1000)) AS Widow(er)s Difference,&#13;
+		 (Total Mon for Adult children (x$1000) - prev_Total Mon for Adult children (x$1000)) AS Adult Children Difference&#13;
+  FROM TotalMonthlyBenefits &#13;
+  ORDER BY Year&#13;
+)&#13;
+SELECT * &#13;
+FROM Prev_Difference.Value.Year</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='Prev_Difference_202308061403.json' datatype='table' name='[__tableau_internal_object_id__].[Prev_Difference_202308061403.json_44F3C2D19B9243E78B63D52C0DAF0C2E]' role='measure' type='quantitative' />
+      <_.fcp.SchemaViewerObjectModel.false...folder name='-- Find the difference by which the total benefits decreased from the previous year&#13;&#10;-- Created table from previous query results for efficiency&#13;&#10;WITH Prev Difference AS (&#13;&#10;SELECT CAST(REPLACE(Year, &apos;,&apos;, &apos;&apos;) AS TEXT) AS Year,&#13;&#10;(Total Mon for Workers (x$1000) - prev Total Mon for Workers (x$1000)) AS Workers Difference,&#13;&#10;(Total Mon for Widow(er)s (x$1000) - prev Total Mon for Widow(er)s (x$1000)) AS Widow(er)s Difference,&#13;&#10;(Total Mon for Adult children (x$1000) - prev Total Mon for Adult children (x$1000)) AS Adult Children Difference&#13;&#10;FROM TotalMonthlyBenefits&#13;&#10;ORDER BY Year&#13;&#10;)&#13;&#10;SELECT *&#13;&#10;FROM Prev Difference' role='dimensions'>
+        <folder-item name='[-- Find the difference by which the total benefits decreased from the previous year&#13;&#10;-- Created table from previous query results for efficiency&#13;&#10;WITH Prev_Difference AS (&#13;&#10;  SELECT CAST(REPLACE(&quot;Year&quot;, &apos;,&apos;, &apos;&apos;) AS TEXT) AS &quot;Year&quot;, &#13;&#10;  &#9; &#9; (&quot;Total Mon for Workers (x$1000)&quot; - &quot;prev_Total Mon for Workers (x$1000)&quot;) AS &quot;Workers Difference&quot;,&#13;&#10;&#9;&#9; (&quot;Total Mon for Widow(er)s (x$1000)&quot; - &quot;prev_Total Mon for Widow(er)s (x$1000)&quot;) AS &quot;Widow(er)s Difference&quot;,&#13;&#10;&#9;&#9; (&quot;Total Mon for Adult children (x$1000)&quot; - &quot;prev_Total Mon for Adult children (x$1000)&quot;) AS &quot;Adult Children Difference&quot;&#13;&#10;  FROM TotalMonthlyBenefits &#13;&#10;  ORDER BY &quot;Year&quot;&#13;&#10;)&#13;&#10;SELECT * &#13;&#10;FROM Prev_Difference Index (generated)]' type='field' />
+        <folder-item name='[Year]' type='field' />
+      </_.fcp.SchemaViewerObjectModel.false...folder>
+      <_.fcp.SchemaViewerObjectModel.false...folder name='Prev Difference 202308061403' role='dimensions'>
+        <folder-item name='[Document Index (generated)]' type='field' />
+      </_.fcp.SchemaViewerObjectModel.false...folder>
+      <_.fcp.SchemaViewerObjectModel.true...folders-common>
+        <folder name='-- Find the difference by which the total benefits decreased from the previous year&#13;&#10;-- Created table from previous query results for efficiency&#13;&#10;WITH Prev Difference AS (&#13;&#10;SELECT CAST(REPLACE(Year, &apos;,&apos;, &apos;&apos;) AS TEXT) AS Year,&#13;&#10;(Total Mon for Workers (x$1000) - prev Total Mon for Workers (x$1000)) AS Workers Difference,&#13;&#10;(Total Mon for Widow(er)s (x$1000) - prev Total Mon for Widow(er)s (x$1000)) AS Widow(er)s Difference,&#13;&#10;(Total Mon for Adult children (x$1000) - prev Total Mon for Adult children (x$1000)) AS Adult Children Difference&#13;&#10;FROM TotalMonthlyBenefits&#13;&#10;ORDER BY Year&#13;&#10;)&#13;&#10;SELECT *&#13;&#10;FROM Prev Difference'>
+          <folder-item name='[-- Find the difference by which the total benefits decreased from the previous year&#13;&#10;-- Created table from previous query results for efficiency&#13;&#10;WITH Prev_Difference AS (&#13;&#10;  SELECT CAST(REPLACE(&quot;Year&quot;, &apos;,&apos;, &apos;&apos;) AS TEXT) AS &quot;Year&quot;, &#13;&#10;  &#9; &#9; (&quot;Total Mon for Workers (x$1000)&quot; - &quot;prev_Total Mon for Workers (x$1000)&quot;) AS &quot;Workers Difference&quot;,&#13;&#10;&#9;&#9; (&quot;Total Mon for Widow(er)s (x$1000)&quot; - &quot;prev_Total Mon for Widow(er)s (x$1000)&quot;) AS &quot;Widow(er)s Difference&quot;,&#13;&#10;&#9;&#9; (&quot;Total Mon for Adult children (x$1000)&quot; - &quot;prev_Total Mon for Adult children (x$1000)&quot;) AS &quot;Adult Children Difference&quot;&#13;&#10;  FROM TotalMonthlyBenefits &#13;&#10;  ORDER BY &quot;Year&quot;&#13;&#10;)&#13;&#10;SELECT * &#13;&#10;FROM Prev_Difference Index (generated)]' type='field' />
+          <folder-item name='[Year]' type='field' />
+        </folder>
+        <folder name='Prev Difference 202308061403'>
+          <folder-item name='[Document Index (generated)]' type='field' />
+        </folder>
+      </_.fcp.SchemaViewerObjectModel.true...folders-common>
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection authentication='auth-none' author-locale='en_US' class='hyper' dbname='Data/Extracts/federated_1ny5kz90p6pxnp1h80tlm0.hyper' default-settings='hyper' schema='Extract' tablename='Extract' update-time='08/06/2023 06:04:08 PM'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <cols>
+            <map key='[-- Find the difference by which the total benefits decreased from the previous year&#13;&#10;-- Created table from previous query results for efficiency&#13;&#10;WITH Prev_Difference AS (&#13;&#10;  SELECT CAST(REPLACE(&quot;Year&quot;, &apos;,&apos;, &apos;&apos;) AS TEXT) AS &quot;Year&quot;, &#13;&#10;  &#9; &#9; (&quot;Total Mon for Workers (x$1000)&quot; - &quot;prev_Total Mon for Workers (x$1000)&quot;) AS &quot;Workers Difference&quot;,&#13;&#10;&#9;&#9; (&quot;Total Mon for Widow(er)s (x$1000)&quot; - &quot;prev_Total Mon for Widow(er)s (x$1000)&quot;) AS &quot;Widow(er)s Difference&quot;,&#13;&#10;&#9;&#9; (&quot;Total Mon for Adult children (x$1000)&quot; - &quot;prev_Total Mon for Adult children (x$1000)&quot;) AS &quot;Adult Children Difference&quot;&#13;&#10;  FROM TotalMonthlyBenefits &#13;&#10;  ORDER BY &quot;Year&quot;&#13;&#10;)&#13;&#10;SELECT * &#13;&#10;FROM Prev_Difference Index (generated)]' value='[Extract].[-- Find the difference by which the total benefits decreased from the previous year&#13;&#10;-- Created table from previous query results for efficiency&#13;&#10;WITH Prev_Difference AS (&#13;&#10;  SELECT CAST(REPLACE(&quot;Year&quot;, &apos;,&apos;, &apos;&apos;) AS TEXT) AS &quot;Year&quot;, &#13;&#10;  &#9; &#9; (&quot;Total Mon for Workers (x$1000)&quot; - &quot;prev_Total Mon for Workers (x$1000)&quot;) AS &quot;Workers Difference&quot;,&#13;&#10;&#9;&#9; (&quot;Total Mon for Widow(er)s (x$1000)&quot; - &quot;prev_Total Mon for Widow(er)s (x$1000)&quot;) AS &quot;Widow(er)s Difference&quot;,&#13;&#10;&#9;&#9; (&quot;Total Mon for Adult children (x$1000)&quot; - &quot;prev_Total Mon for Adult children (x$1000)&quot;) AS &quot;Adult Children Difference&quot;&#13;&#10;  FROM TotalMonthlyBenefits &#13;&#10;  ORDER BY &quot;Year&quot;&#13;&#10;)&#13;&#10;SELECT * &#13;&#10;FROM Prev_Difference.Index (generated)]' />
+            <map key='[Adult Children Difference]' value='[Extract].[-- Find the difference by which the total benefits decreased from the previous year&#13;&#10;-- Created table from previous query results for efficiency&#13;&#10;WITH Prev_Difference AS (&#13;&#10;  SELECT CAST(REPLACE(&quot;Year&quot;, &apos;,&apos;, &apos;&apos;) AS TEXT) AS &quot;Year&quot;, &#13;&#10;  &#9; &#9; (&quot;Total Mon for Workers (x$1000)&quot; - &quot;prev_Total Mon for Workers (x$1000)&quot;) AS &quot;Workers Difference&quot;,&#13;&#10;&#9;&#9; (&quot;Total Mon for Widow(er)s (x$1000)&quot; - &quot;prev_Total Mon for Widow(er)s (x$1000)&quot;) AS &quot;Widow(er)s Difference&quot;,&#13;&#10;&#9;&#9; (&quot;Total Mon for Adult children (x$1000)&quot; - &quot;prev_Total Mon for Adult children (x$1000)&quot;) AS &quot;Adult Children Difference&quot;&#13;&#10;  FROM TotalMonthlyBenefits &#13;&#10;  ORDER BY &quot;Year&quot;&#13;&#10;)&#13;&#10;SELECT * &#13;&#10;FROM Prev_Difference.Value.Adult Children Difference]' />
+            <map key='[Document Index (generated)]' value='[Extract].[Document Index (generated)]' />
+            <map key='[Widow(er)s Difference]' value='[Extract].[-- Find the difference by which the total benefits decreased from the previous year&#13;&#10;-- Created table from previous query results for efficiency&#13;&#10;WITH Prev_Difference AS (&#13;&#10;  SELECT CAST(REPLACE(&quot;Year&quot;, &apos;,&apos;, &apos;&apos;) AS TEXT) AS &quot;Year&quot;, &#13;&#10;  &#9; &#9; (&quot;Total Mon for Workers (x$1000)&quot; - &quot;prev_Total Mon for Workers (x$1000)&quot;) AS &quot;Workers Difference&quot;,&#13;&#10;&#9;&#9; (&quot;Total Mon for Widow(er)s (x$1000)&quot; - &quot;prev_Total Mon for Widow(er)s (x$1000)&quot;) AS &quot;Widow(er)s Difference&quot;,&#13;&#10;&#9;&#9; (&quot;Total Mon for Adult children (x$1000)&quot; - &quot;prev_Total Mon for Adult children (x$1000)&quot;) AS &quot;Adult Children Difference&quot;&#13;&#10;  FROM TotalMonthlyBenefits &#13;&#10;  ORDER BY &quot;Year&quot;&#13;&#10;)&#13;&#10;SELECT * &#13;&#10;FROM Prev_Difference.Value.Widow(er)s Difference]' />
+            <map key='[Workers Difference]' value='[Extract].[-- Find the difference by which the total benefits decreased from the previous year&#13;&#10;-- Created table from previous query results for efficiency&#13;&#10;WITH Prev_Difference AS (&#13;&#10;  SELECT CAST(REPLACE(&quot;Year&quot;, &apos;,&apos;, &apos;&apos;) AS TEXT) AS &quot;Year&quot;, &#13;&#10;  &#9; &#9; (&quot;Total Mon for Workers (x$1000)&quot; - &quot;prev_Total Mon for Workers (x$1000)&quot;) AS &quot;Workers Difference&quot;,&#13;&#10;&#9;&#9; (&quot;Total Mon for Widow(er)s (x$1000)&quot; - &quot;prev_Total Mon for Widow(er)s (x$1000)&quot;) AS &quot;Widow(er)s Difference&quot;,&#13;&#10;&#9;&#9; (&quot;Total Mon for Adult children (x$1000)&quot; - &quot;prev_Total Mon for Adult children (x$1000)&quot;) AS &quot;Adult Children Difference&quot;&#13;&#10;  FROM TotalMonthlyBenefits &#13;&#10;  ORDER BY &quot;Year&quot;&#13;&#10;)&#13;&#10;SELECT * &#13;&#10;FROM Prev_Difference.Value.Workers Difference]' />
+            <map key='[Year]' value='[Extract].[-- Find the difference by which the total benefits decreased from the previous year&#13;&#10;-- Created table from previous query results for efficiency&#13;&#10;WITH Prev_Difference AS (&#13;&#10;  SELECT CAST(REPLACE(&quot;Year&quot;, &apos;,&apos;, &apos;&apos;) AS TEXT) AS &quot;Year&quot;, &#13;&#10;  &#9; &#9; (&quot;Total Mon for Workers (x$1000)&quot; - &quot;prev_Total Mon for Workers (x$1000)&quot;) AS &quot;Workers Difference&quot;,&#13;&#10;&#9;&#9; (&quot;Total Mon for Widow(er)s (x$1000)&quot; - &quot;prev_Total Mon for Widow(er)s (x$1000)&quot;) AS &quot;Widow(er)s Difference&quot;,&#13;&#10;&#9;&#9; (&quot;Total Mon for Adult children (x$1000)&quot; - &quot;prev_Total Mon for Adult children (x$1000)&quot;) AS &quot;Adult Children Difference&quot;&#13;&#10;  FROM TotalMonthlyBenefits &#13;&#10;  ORDER BY &quot;Year&quot;&#13;&#10;)&#13;&#10;SELECT * &#13;&#10;FROM Prev_Difference.Value.Year]' />
+          </cols>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Document Index (generated)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Document Index (generated)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Document Index (generated)</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Prev_Difference_202308061403.json</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Prev_Difference_202308061403.json_44F3C2D19B9243E78B63D52C0DAF0C2E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>-- Find the difference by which the total benefits decreased from the previous year&#13;
+-- Created table from previous query results for efficiency&#13;
+WITH Prev_Difference AS (&#13;
+  SELECT CAST(REPLACE(&quot;Year&quot;, &apos;,&apos;, &apos;&apos;) AS TEXT) AS &quot;Year&quot;, &#13;
+  	 	 (&quot;Total Mon for Workers (x$1000)&quot; - &quot;prev_Total Mon for Workers (x$1000)&quot;) AS &quot;Workers Difference&quot;,&#13;
+		 (&quot;Total Mon for Widow(er)s (x$1000)&quot; - &quot;prev_Total Mon for Widow(er)s (x$1000)&quot;) AS &quot;Widow(er)s Difference&quot;,&#13;
+		 (&quot;Total Mon for Adult children (x$1000)&quot; - &quot;prev_Total Mon for Adult children (x$1000)&quot;) AS &quot;Adult Children Difference&quot;&#13;
+  FROM TotalMonthlyBenefits &#13;
+  ORDER BY &quot;Year&quot;&#13;
+)&#13;
+SELECT * &#13;
+FROM Prev_Difference.Index (generated)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[-- Find the difference by which the total benefits decreased from the previous year&#13;
+-- Created table from previous query results for efficiency&#13;
+WITH Prev_Difference AS (&#13;
+  SELECT CAST(REPLACE(&quot;Year&quot;, &apos;,&apos;, &apos;&apos;) AS TEXT) AS &quot;Year&quot;, &#13;
+  	 	 (&quot;Total Mon for Workers (x$1000)&quot; - &quot;prev_Total Mon for Workers (x$1000)&quot;) AS &quot;Workers Difference&quot;,&#13;
+		 (&quot;Total Mon for Widow(er)s (x$1000)&quot; - &quot;prev_Total Mon for Widow(er)s (x$1000)&quot;) AS &quot;Widow(er)s Difference&quot;,&#13;
+		 (&quot;Total Mon for Adult children (x$1000)&quot; - &quot;prev_Total Mon for Adult children (x$1000)&quot;) AS &quot;Adult Children Difference&quot;&#13;
+  FROM TotalMonthlyBenefits &#13;
+  ORDER BY &quot;Year&quot;&#13;
+)&#13;
+SELECT * &#13;
+FROM Prev_Difference Index (generated)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>-- Find the difference by which the total benefits decreased from the previous year&#13;
+-- Created table from previous query results for efficiency&#13;
+WITH Prev_Difference AS (&#13;
+  SELECT CAST(REPLACE(&quot;Year&quot;, &apos;,&apos;, &apos;&apos;) AS TEXT) AS &quot;Year&quot;, &#13;
+  	 	 (&quot;Total Mon for Workers (x$1000)&quot; - &quot;prev_Total Mon for Workers (x$1000)&quot;) AS &quot;Workers Difference&quot;,&#13;
+		 (&quot;Total Mon for Widow(er)s (x$1000)&quot; - &quot;prev_Total Mon for Widow(er)s (x$1000)&quot;) AS &quot;Widow(er)s Difference&quot;,&#13;
+		 (&quot;Total Mon for Adult children (x$1000)&quot; - &quot;prev_Total Mon for Adult children (x$1000)&quot;) AS &quot;Adult Children Difference&quot;&#13;
+  FROM TotalMonthlyBenefits &#13;
+  ORDER BY &quot;Year&quot;&#13;
+)&#13;
+SELECT * &#13;
+FROM Prev_Difference.Index (generated)</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Prev_Difference_202308061403.json</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Prev_Difference_202308061403.json_44F3C2D19B9243E78B63D52C0DAF0C2E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>-- Find the difference by which the total benefits decreased from the previous year&#13;
+-- Created table from previous query results for efficiency&#13;
+WITH Prev_Difference AS (&#13;
+  SELECT CAST(REPLACE(&quot;Year&quot;, &apos;,&apos;, &apos;&apos;) AS TEXT) AS &quot;Year&quot;, &#13;
+  	 	 (&quot;Total Mon for Workers (x$1000)&quot; - &quot;prev_Total Mon for Workers (x$1000)&quot;) AS &quot;Workers Difference&quot;,&#13;
+		 (&quot;Total Mon for Widow(er)s (x$1000)&quot; - &quot;prev_Total Mon for Widow(er)s (x$1000)&quot;) AS &quot;Widow(er)s Difference&quot;,&#13;
+		 (&quot;Total Mon for Adult children (x$1000)&quot; - &quot;prev_Total Mon for Adult children (x$1000)&quot;) AS &quot;Adult Children Difference&quot;&#13;
+  FROM TotalMonthlyBenefits &#13;
+  ORDER BY &quot;Year&quot;&#13;
+)&#13;
+SELECT * &#13;
+FROM Prev_Difference.Value.Adult Children Difference</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Adult Children Difference]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>-- Find the difference by which the total benefits decreased from the previous year&#13;
+-- Created table from previous query results for efficiency&#13;
+WITH Prev_Difference AS (&#13;
+  SELECT CAST(REPLACE(&quot;Year&quot;, &apos;,&apos;, &apos;&apos;) AS TEXT) AS &quot;Year&quot;, &#13;
+  	 	 (&quot;Total Mon for Workers (x$1000)&quot; - &quot;prev_Total Mon for Workers (x$1000)&quot;) AS &quot;Workers Difference&quot;,&#13;
+		 (&quot;Total Mon for Widow(er)s (x$1000)&quot; - &quot;prev_Total Mon for Widow(er)s (x$1000)&quot;) AS &quot;Widow(er)s Difference&quot;,&#13;
+		 (&quot;Total Mon for Adult children (x$1000)&quot; - &quot;prev_Total Mon for Adult children (x$1000)&quot;) AS &quot;Adult Children Difference&quot;&#13;
+  FROM TotalMonthlyBenefits &#13;
+  ORDER BY &quot;Year&quot;&#13;
+)&#13;
+SELECT * &#13;
+FROM Prev_Difference.Value.Adult Children Difference</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Prev_Difference_202308061403.json</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Prev_Difference_202308061403.json_44F3C2D19B9243E78B63D52C0DAF0C2E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>-- Find the difference by which the total benefits decreased from the previous year&#13;
+-- Created table from previous query results for efficiency&#13;
+WITH Prev_Difference AS (&#13;
+  SELECT CAST(REPLACE(&quot;Year&quot;, &apos;,&apos;, &apos;&apos;) AS TEXT) AS &quot;Year&quot;, &#13;
+  	 	 (&quot;Total Mon for Workers (x$1000)&quot; - &quot;prev_Total Mon for Workers (x$1000)&quot;) AS &quot;Workers Difference&quot;,&#13;
+		 (&quot;Total Mon for Widow(er)s (x$1000)&quot; - &quot;prev_Total Mon for Widow(er)s (x$1000)&quot;) AS &quot;Widow(er)s Difference&quot;,&#13;
+		 (&quot;Total Mon for Adult children (x$1000)&quot; - &quot;prev_Total Mon for Adult children (x$1000)&quot;) AS &quot;Adult Children Difference&quot;&#13;
+  FROM TotalMonthlyBenefits &#13;
+  ORDER BY &quot;Year&quot;&#13;
+)&#13;
+SELECT * &#13;
+FROM Prev_Difference.Value.Widow(er)s Difference</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Widow(er)s Difference]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>-- Find the difference by which the total benefits decreased from the previous year&#13;
+-- Created table from previous query results for efficiency&#13;
+WITH Prev_Difference AS (&#13;
+  SELECT CAST(REPLACE(&quot;Year&quot;, &apos;,&apos;, &apos;&apos;) AS TEXT) AS &quot;Year&quot;, &#13;
+  	 	 (&quot;Total Mon for Workers (x$1000)&quot; - &quot;prev_Total Mon for Workers (x$1000)&quot;) AS &quot;Workers Difference&quot;,&#13;
+		 (&quot;Total Mon for Widow(er)s (x$1000)&quot; - &quot;prev_Total Mon for Widow(er)s (x$1000)&quot;) AS &quot;Widow(er)s Difference&quot;,&#13;
+		 (&quot;Total Mon for Adult children (x$1000)&quot; - &quot;prev_Total Mon for Adult children (x$1000)&quot;) AS &quot;Adult Children Difference&quot;&#13;
+  FROM TotalMonthlyBenefits &#13;
+  ORDER BY &quot;Year&quot;&#13;
+)&#13;
+SELECT * &#13;
+FROM Prev_Difference.Value.Widow(er)s Difference</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Prev_Difference_202308061403.json</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Prev_Difference_202308061403.json_44F3C2D19B9243E78B63D52C0DAF0C2E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>-- Find the difference by which the total benefits decreased from the previous year&#13;
+-- Created table from previous query results for efficiency&#13;
+WITH Prev_Difference AS (&#13;
+  SELECT CAST(REPLACE(&quot;Year&quot;, &apos;,&apos;, &apos;&apos;) AS TEXT) AS &quot;Year&quot;, &#13;
+  	 	 (&quot;Total Mon for Workers (x$1000)&quot; - &quot;prev_Total Mon for Workers (x$1000)&quot;) AS &quot;Workers Difference&quot;,&#13;
+		 (&quot;Total Mon for Widow(er)s (x$1000)&quot; - &quot;prev_Total Mon for Widow(er)s (x$1000)&quot;) AS &quot;Widow(er)s Difference&quot;,&#13;
+		 (&quot;Total Mon for Adult children (x$1000)&quot; - &quot;prev_Total Mon for Adult children (x$1000)&quot;) AS &quot;Adult Children Difference&quot;&#13;
+  FROM TotalMonthlyBenefits &#13;
+  ORDER BY &quot;Year&quot;&#13;
+)&#13;
+SELECT * &#13;
+FROM Prev_Difference.Value.Workers Difference</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Workers Difference]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>-- Find the difference by which the total benefits decreased from the previous year&#13;
+-- Created table from previous query results for efficiency&#13;
+WITH Prev_Difference AS (&#13;
+  SELECT CAST(REPLACE(&quot;Year&quot;, &apos;,&apos;, &apos;&apos;) AS TEXT) AS &quot;Year&quot;, &#13;
+  	 	 (&quot;Total Mon for Workers (x$1000)&quot; - &quot;prev_Total Mon for Workers (x$1000)&quot;) AS &quot;Workers Difference&quot;,&#13;
+		 (&quot;Total Mon for Widow(er)s (x$1000)&quot; - &quot;prev_Total Mon for Widow(er)s (x$1000)&quot;) AS &quot;Widow(er)s Difference&quot;,&#13;
+		 (&quot;Total Mon for Adult children (x$1000)&quot; - &quot;prev_Total Mon for Adult children (x$1000)&quot;) AS &quot;Adult Children Difference&quot;&#13;
+  FROM TotalMonthlyBenefits &#13;
+  ORDER BY &quot;Year&quot;&#13;
+)&#13;
+SELECT * &#13;
+FROM Prev_Difference.Value.Workers Difference</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Prev_Difference_202308061403.json</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Prev_Difference_202308061403.json_44F3C2D19B9243E78B63D52C0DAF0C2E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>-- Find the difference by which the total benefits decreased from the previous year&#13;
+-- Created table from previous query results for efficiency&#13;
+WITH Prev_Difference AS (&#13;
+  SELECT CAST(REPLACE(&quot;Year&quot;, &apos;,&apos;, &apos;&apos;) AS TEXT) AS &quot;Year&quot;, &#13;
+  	 	 (&quot;Total Mon for Workers (x$1000)&quot; - &quot;prev_Total Mon for Workers (x$1000)&quot;) AS &quot;Workers Difference&quot;,&#13;
+		 (&quot;Total Mon for Widow(er)s (x$1000)&quot; - &quot;prev_Total Mon for Widow(er)s (x$1000)&quot;) AS &quot;Widow(er)s Difference&quot;,&#13;
+		 (&quot;Total Mon for Adult children (x$1000)&quot; - &quot;prev_Total Mon for Adult children (x$1000)&quot;) AS &quot;Adult Children Difference&quot;&#13;
+  FROM TotalMonthlyBenefits &#13;
+  ORDER BY &quot;Year&quot;&#13;
+)&#13;
+SELECT * &#13;
+FROM Prev_Difference.Value.Year</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>-- Find the difference by which the total benefits decreased from the previous year&#13;
+-- Created table from previous query results for efficiency&#13;
+WITH Prev_Difference AS (&#13;
+  SELECT CAST(REPLACE(&quot;Year&quot;, &apos;,&apos;, &apos;&apos;) AS TEXT) AS &quot;Year&quot;, &#13;
+  	 	 (&quot;Total Mon for Workers (x$1000)&quot; - &quot;prev_Total Mon for Workers (x$1000)&quot;) AS &quot;Workers Difference&quot;,&#13;
+		 (&quot;Total Mon for Widow(er)s (x$1000)&quot; - &quot;prev_Total Mon for Widow(er)s (x$1000)&quot;) AS &quot;Widow(er)s Difference&quot;,&#13;
+		 (&quot;Total Mon for Adult children (x$1000)&quot; - &quot;prev_Total Mon for Adult children (x$1000)&quot;) AS &quot;Adult Children Difference&quot;&#13;
+  FROM TotalMonthlyBenefits &#13;
+  ORDER BY &quot;Year&quot;&#13;
+)&#13;
+SELECT * &#13;
+FROM Prev_Difference.Value.Year</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Prev_Difference_202308061403.json</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Prev_Difference_202308061403.json_44F3C2D19B9243E78B63D52C0DAF0C2E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='false' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Prev_Difference_202308061403.json' id='Prev_Difference_202308061403.json_44F3C2D19B9243E78B63D52C0DAF0C2E'>
+            <properties context=''>
+              <relation connection='semistructpassivestore-direct.0n5hnzr0w014zy15jj7di0ybecg3' name='Prev_Difference_202308061403.json' table='[Prev_Difference_202308061403.json]' type='table' />
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Total Beneficiaries Each Year 1960-2021</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://vizhub/workbooks/SSDISQLiteQueryVisuals/Sheet1?rev=' id='Sheet1' path='/workbooks/SSDISQLiteQueryVisuals' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='sect01b_202308060421' name='federated.1czuz3g11p2ml312h00xu00gbiez' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1czuz3g11p2ml312h00xu00gbiez'>
+            <column caption='Total Int' datatype='real' name='[TotalInt]' role='measure' type='quantitative'>
+              <desc>
+                <formatted-text>
+                  <run>SELECT Year, CAST(REPLACE(Total, &apos;,&apos;, &apos;&apos;) AS INTEGER) AS TotalInt&#13;
+FROM sect01b&#13;
+ORDER BY TotalInt DESC.Value.TotalInt</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column datatype='string' name='[Year]' role='dimension' type='nominal'>
+              <desc>
+                <formatted-text>
+                  <run>SELECT Year, CAST(REPLACE(Total, &apos;,&apos;, &apos;&apos;) AS INTEGER) AS TotalInt&#13;
+FROM sect01b&#13;
+ORDER BY TotalInt DESC.Value.Year</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column-instance column='[Year]' derivation='None' name='[none:Year:nk]' pivot='key' type='nominal' />
+            <column-instance column='[TotalInt]' derivation='Sum' name='[sum:TotalInt:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1czuz3g11p2ml312h00xu00gbiez].[none:Year:nk]</rows>
+        <cols>[federated.1czuz3g11p2ml312h00xu00gbiez].[sum:TotalInt:qk]</cols>
+      </table>
+      <simple-id uuid='{32A02406-D75A-4041-8670-48108F7BBB8F}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Avg Monthly Benefits Changes 2011-2021</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://vizhub/workbooks/SSDISQLiteQueryVisuals/Sheet2?rev=' id='Sheet2' path='/workbooks/SSDISQLiteQueryVisuals' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='sect01b_202308061133' name='federated.0zdy1hb0vb7rrd129qr0u18hgkrk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0zdy1hb0vb7rrd129qr0u18hgkrk'>
+            <column caption='Year' datatype='date' name='[F2]' role='dimension' type='ordinal' />
+            <column caption='Avg Mon for Workers ($)' datatype='real' name='[F3]' role='measure' type='quantitative' />
+            <column caption='Avg Mon for Widow(er)s ($)' datatype='real' name='[F4]' role='measure' type='quantitative' />
+            <column caption='Avg Mon for Adult Children ($)' datatype='real' name='[F5]' role='measure' type='quantitative' />
+            <column-instance column='[F3]' derivation='Sum' name='[sum:F3:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[F4]' derivation='Sum' name='[sum:F4:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[F5]' derivation='Sum' name='[sum:F5:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[F2]' derivation='Year-Trunc' name='[tyr:F2:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0zdy1hb0vb7rrd129qr0u18hgkrk].[sum:F3:qk]' included-values='non-null' />
+          <slices>
+            <column>[federated.0zdy1hb0vb7rrd129qr0u18hgkrk].[sum:F3:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' domain-expand='false' field='[federated.0zdy1hb0vb7rrd129qr0u18hgkrk].[sum:F3:qk]' field-type='quantitative' scope='rows' type='space' />
+            <encoding attr='space' class='0' domain-expand='false' field='[federated.0zdy1hb0vb7rrd129qr0u18hgkrk].[sum:F4:qk]' field-type='quantitative' scope='rows' type='space' />
+            <encoding attr='space' class='0' domain-expand='false' field='[federated.0zdy1hb0vb7rrd129qr0u18hgkrk].[sum:F5:qk]' field-type='quantitative' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#00000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='line-interpolation' value='step' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0zdy1hb0vb7rrd129qr0u18hgkrk].[sum:F3:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='line-interpolation' value='step' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0zdy1hb0vb7rrd129qr0u18hgkrk].[sum:F4:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='line-interpolation' value='step' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0zdy1hb0vb7rrd129qr0u18hgkrk].[sum:F5:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='line-interpolation' value='step' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0zdy1hb0vb7rrd129qr0u18hgkrk].[sum:F3:qk] + ([federated.0zdy1hb0vb7rrd129qr0u18hgkrk].[sum:F4:qk] + [federated.0zdy1hb0vb7rrd129qr0u18hgkrk].[sum:F5:qk]))</rows>
+        <cols>[federated.0zdy1hb0vb7rrd129qr0u18hgkrk].[tyr:F2:qk]</cols>
+      </table>
+      <simple-id uuid='{A87B5F24-7873-4468-B9CB-1D59105F8C88}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Years With Decreased Benefits From Previous Year + Amounts</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://vizhub/workbooks/SSDISQLiteQueryVisuals/Sheet3?rev=' id='Sheet3' path='/workbooks/SSDISQLiteQueryVisuals' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Prev_Difference_202308061403' name='federated.1ny5kz90p6pxnp1h80tlm0yxvjpr' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ny5kz90p6pxnp1h80tlm0yxvjpr'>
+            <column datatype='real' name='[Adult Children Difference]' role='measure' type='quantitative'>
+              <desc>
+                <formatted-text>
+                  <run>-- Find the difference by which the total benefits decreased from the previous year&#13;
+-- Created table from previous query results for efficiency&#13;
+WITH Prev_Difference AS (&#13;
+  SELECT CAST(REPLACE(Year, &apos;,&apos;, &apos;&apos;) AS TEXT) AS Year, &#13;
+  	 	 (Total Mon for Workers (x$1000) - prev_Total Mon for Workers (x$1000)) AS Workers Difference,&#13;
+		 (Total Mon for Widow(er)s (x$1000) - prev_Total Mon for Widow(er)s (x$1000)) AS Widow(er)s Difference,&#13;
+		 (Total Mon for Adult children (x$1000) - prev_Total Mon for Adult children (x$1000)) AS Adult Children Difference&#13;
+  FROM TotalMonthlyBenefits &#13;
+  ORDER BY Year&#13;
+)&#13;
+SELECT * &#13;
+FROM Prev_Difference.Value.Adult Children Difference</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column datatype='real' name='[Widow(er)s Difference]' role='measure' type='quantitative'>
+              <desc>
+                <formatted-text>
+                  <run>-- Find the difference by which the total benefits decreased from the previous year&#13;
+-- Created table from previous query results for efficiency&#13;
+WITH Prev_Difference AS (&#13;
+  SELECT CAST(REPLACE(Year, &apos;,&apos;, &apos;&apos;) AS TEXT) AS Year, &#13;
+  	 	 (Total Mon for Workers (x$1000) - prev_Total Mon for Workers (x$1000)) AS Workers Difference,&#13;
+		 (Total Mon for Widow(er)s (x$1000) - prev_Total Mon for Widow(er)s (x$1000)) AS Widow(er)s Difference,&#13;
+		 (Total Mon for Adult children (x$1000) - prev_Total Mon for Adult children (x$1000)) AS Adult Children Difference&#13;
+  FROM TotalMonthlyBenefits &#13;
+  ORDER BY Year&#13;
+)&#13;
+SELECT * &#13;
+FROM Prev_Difference.Value.Widow(er)s Difference</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column datatype='real' name='[Workers Difference]' role='measure' type='quantitative'>
+              <desc>
+                <formatted-text>
+                  <run>-- Find the difference by which the total benefits decreased from the previous year&#13;
+-- Created table from previous query results for efficiency&#13;
+WITH Prev_Difference AS (&#13;
+  SELECT CAST(REPLACE(Year, &apos;,&apos;, &apos;&apos;) AS TEXT) AS Year, &#13;
+  	 	 (Total Mon for Workers (x$1000) - prev_Total Mon for Workers (x$1000)) AS Workers Difference,&#13;
+		 (Total Mon for Widow(er)s (x$1000) - prev_Total Mon for Widow(er)s (x$1000)) AS Widow(er)s Difference,&#13;
+		 (Total Mon for Adult children (x$1000) - prev_Total Mon for Adult children (x$1000)) AS Adult Children Difference&#13;
+  FROM TotalMonthlyBenefits &#13;
+  ORDER BY Year&#13;
+)&#13;
+SELECT * &#13;
+FROM Prev_Difference.Value.Workers Difference</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column datatype='string' name='[Year]' role='dimension' type='nominal'>
+              <desc>
+                <formatted-text>
+                  <run>-- Find the difference by which the total benefits decreased from the previous year&#13;
+-- Created table from previous query results for efficiency&#13;
+WITH Prev_Difference AS (&#13;
+  SELECT CAST(REPLACE(Year, &apos;,&apos;, &apos;&apos;) AS TEXT) AS Year, &#13;
+  	 	 (Total Mon for Workers (x$1000) - prev_Total Mon for Workers (x$1000)) AS Workers Difference,&#13;
+		 (Total Mon for Widow(er)s (x$1000) - prev_Total Mon for Widow(er)s (x$1000)) AS Widow(er)s Difference,&#13;
+		 (Total Mon for Adult children (x$1000) - prev_Total Mon for Adult children (x$1000)) AS Adult Children Difference&#13;
+  FROM TotalMonthlyBenefits &#13;
+  ORDER BY Year&#13;
+)&#13;
+SELECT * &#13;
+FROM Prev_Difference.Value.Year</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column-instance column='[Adult Children Difference]' derivation='None' name='[none:Adult Children Difference:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Widow(er)s Difference]' derivation='None' name='[none:Widow(er)s Difference:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Workers Difference]' derivation='None' name='[none:Workers Difference:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.1ny5kz90p6pxnp1h80tlm0yxvjpr].[none:Workers Difference:qk]' value='C1033%' />
+            <format attr='text-format' field='[federated.1ny5kz90p6pxnp1h80tlm0yxvjpr].[none:Widow(er)s Difference:qk]' value='C1033%' />
+            <format attr='text-format' field='[federated.1ny5kz90p6pxnp1h80tlm0yxvjpr].[none:Adult Children Difference:qk]' value='C1033%' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1ny5kz90p6pxnp1h80tlm0yxvjpr].[none:Workers Difference:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1ny5kz90p6pxnp1h80tlm0yxvjpr].[none:Widow(er)s Difference:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1ny5kz90p6pxnp1h80tlm0yxvjpr].[none:Adult Children Difference:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+          </pane>
+        </panes>
+        <rows>([federated.1ny5kz90p6pxnp1h80tlm0yxvjpr].[none:Workers Difference:qk] + ([federated.1ny5kz90p6pxnp1h80tlm0yxvjpr].[none:Widow(er)s Difference:qk] + [federated.1ny5kz90p6pxnp1h80tlm0yxvjpr].[none:Adult Children Difference:qk]))</rows>
+        <cols>[federated.1ny5kz90p6pxnp1h80tlm0yxvjpr].[none:Year:nk]</cols>
+      </table>
+      <simple-id uuid='{0B23D6F0-12E8-40AD-94C6-2BDC9C746533}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='SSDI SQL Query Visuals'>
+      <repository-location derived-from='https://vizhub/workbooks/SSDISQLiteQueryVisuals/SSDISQLQueryVisuals?rev=' id='SSDISQLQueryVisuals' path='/workbooks/SSDISQLiteQueryVisuals' revision='' />
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='44557' id='5' name='Sheet 1' w='99058' x='471' y='54411'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='53379' id='6' name='Sheet 2' w='49529' x='471' y='1032'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='53379' id='7' name='Sheet 3' w='49529' x='50000' y='1032'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='12058' id='3' type-v2='text' w='33762' x='63839' y='54978'>
+          <formatted-text>
+            <run>SOURCES: Social Security Administration. For years before 2000, Annual Statistical Supplement to the Social Security Bulletin, based on the Master Beneficiary Record, various sampling rates; for 2000, Social Security Disability Insurance Beneficiaries, 100 percent data; beginning with 2001, Master Beneficiary Record, 100 percent data.
+</run>
+            <run auto-url='true' hyperlink='tabdoc:load-url url=&amp;quot;https://www.ssa.gov/policy/docs/statcomps/di_asr/2021/sect01b.html&amp;quot;'>https://www.ssa.gov/policy/docs/statcomps/di_asr/2021/sect01b.html</run>
+          </formatted-text>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='950' minheight='950' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='13' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97936' id='12' param='vert' type-v2='layout-flow' w='99058' x='471' y='1032'>
+                <zone fixed-size='280' h='53379' id='6' is-fixed='true' name='Sheet 2' w='49529' x='471' y='1032'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='53379' id='7' is-fixed='true' name='Sheet 3' w='49529' x='50000' y='1032'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='44557' id='5' is-fixed='true' name='Sheet 1' w='99058' x='471' y='54411'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='12058' id='3' type-v2='text' w='33762' x='63839' y='54978'>
+                  <formatted-text>
+                    <run>SOURCES: Social Security Administration. For years before 2000, Annual Statistical Supplement to the Social Security Bulletin, based on the Master Beneficiary Record, various sampling rates; for 2000, Social Security Disability Insurance Beneficiaries, 100 percent data; beginning with 2001, Master Beneficiary Record, 100 percent data.
+</run>
+                    <run auto-url='true' hyperlink='tabdoc:load-url url=&amp;quot;https://www.ssa.gov/policy/docs/statcomps/di_asr/2021/sect01b.html&amp;quot;'>https://www.ssa.gov/policy/docs/statcomps/di_asr/2021/sect01b.html</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{010ADA92-92AA-4AE7-AA0F-D9C98823B393}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='184'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{98DED202-2BDE-426D-ABDA-0925F24622D4}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0585j2x1fudoea14fgan11vk492g].[:Measure Names]</field>
+            <field>[federated.0585j2x1fudoea14fgan11vk492g].[none:Avg Mon for Adult children ($):qk]</field>
+            <field>[federated.0585j2x1fudoea14fgan11vk492g].[none:Avg Mon for Widow(er)s ($):qk]</field>
+            <field>[federated.0585j2x1fudoea14fgan11vk492g].[none:Year:nk]</field>
+            <field>[federated.0585j2x1fudoea14fgan11vk492g].[yr:Year:ok]</field>
+            <field>[federated.0zdy1hb0vb7rrd129qr0u18hgkrk].[none:F2:qk]</field>
+            <field>[federated.0zdy1hb0vb7rrd129qr0u18hgkrk].[none:F3:ok]</field>
+            <field>[federated.0zdy1hb0vb7rrd129qr0u18hgkrk].[none:F4:ok]</field>
+            <field>[federated.0zdy1hb0vb7rrd129qr0u18hgkrk].[none:F5:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{00D690B5-2525-46CB-B9CA-0A747C783850}' />
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1ny5kz90p6pxnp1h80tlm0yxvjpr].[none:Adult Children Difference:qk]</field>
+            <field>[federated.1ny5kz90p6pxnp1h80tlm0yxvjpr].[none:Widow(er)s Difference:qk]</field>
+            <field>[federated.1ny5kz90p6pxnp1h80tlm0yxvjpr].[none:Workers Difference:qk]</field>
+            <field>[federated.1ny5kz90p6pxnp1h80tlm0yxvjpr].[none:Year:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{E83C16D8-F01C-4E0A-B7BC-3B36863B39E9}' />
+    </window>
+    <window class='dashboard' maximized='true' name='SSDI SQL Query Visuals'>
+      <viewpoints>
+        <viewpoint name='Sheet 1' />
+        <viewpoint name='Sheet 2' />
+        <viewpoint name='Sheet 3'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='3' />
+      <simple-id uuid='{C59A8EAE-E070-4DA7-831A-E04EA3EFB007}' />
+    </window>
+  </windows>
+</workbook>
