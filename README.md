@@ -11,4 +11,4 @@ Analyze SSDI Beneficiary Information and Derive Conclusions For SQL Practice
 - Tableau Public for visualization [Dashboard](https://public.tableau.com/app/profile/abhishek.dasgupta6959/viz/SSDISQLiteQueryVisuals/SSDISQLQueryVisuals)
 
 ### Dashboard
-<kbd><img width="1425" alt=https://github.com/abhidasgupt/SQL-Experiments-Projects/assets/132301523/6def8d1d-edbb-4839-8343-b7134ae9979f)></kbd>
+https://github.com/abhidasgupt/SQL-Experiments-Projects/assets/132301523/6def8d1d-edbb-4839-8343-b7134ae9979f)
